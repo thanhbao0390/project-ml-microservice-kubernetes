@@ -19,7 +19,7 @@ Your project goal is to operationalize this working, machine learning microservi
 
 You can find a detailed [project rubric, here](https://review.udacity.com/#!/rubrics/2576/view).
 
-**The final implementation of the project will showcase your abilities to operationalize production microservices.**
+**The final implementation of the project production microservices.**
 
 ---
 
@@ -45,6 +45,13 @@ source .devops/bin/activate
 ### Kubernetes Steps
 
 * Setup and Configure Docker locally
+    Install docker and create docker hub account
 * Setup and Configure Kubernetes locally
+    Install a virtual machine like VirtualBox and minikube
+    Start a local cluster: minikube start
 * Create Flask app in Container
+    Build image and add a descriptive tag: docker build --tag=ml-api .
+    Upload docker image: ./upload_docker.sh where your docker id should be used
 * Run via kubectl
+    Run in Kubernetes: ./run_kubernetes.sh where dockerpath should be same name as defined above
+    Make prediction using second terminal: make_prediction.sh
