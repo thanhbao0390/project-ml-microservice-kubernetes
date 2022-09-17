@@ -48,9 +48,9 @@ source .devops/bin/activate
     Install docker and create docker hub account
 * Setup and Configure Kubernetes locally
     Install a virtual machine like VirtualBox and minikube
-    Start a local cluster: minikube start
+    Start a local cluster: minikube start --ignore-preflight-errors=all
 * Create Flask app in Container
-    Build image and add a descriptive tag: docker build --tag=ml-api .
+    Build image and add a descriptive tag: docker build --tag=p4baont1app .
     Upload docker image: ./upload_docker.sh where your docker id should be used
 * Run via kubectl
     Run in Kubernetes: ./run_kubernetes.sh where dockerpath should be same name as defined above
