@@ -1,1 +1,7 @@
-<paste log output from Kubernetes-mediated prediction, here>
+voclabs:~/environment/project-ml-microservice-kubernetes (main) $ kubectl port-forward p4baont1app 8000:80
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+Handling connection for 8000
+Handling connection for 8000
+Handling connection for 8000
