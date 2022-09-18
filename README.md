@@ -54,4 +54,4 @@ source .devops/bin/activate
     Upload docker image: ./upload_docker.sh where your docker id should be used
 * Run via kubectl
     Run in Kubernetes: ./run_kubernetes.sh where dockerpath should be same name as defined above
-    Make prediction using second terminal: make_prediction.sh
+    Make prediction using second terminal: ./make_prediction.sh
